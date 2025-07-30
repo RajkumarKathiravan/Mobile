@@ -3,39 +3,73 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Mobile Page</title>
+  <title>Raj's Mobile Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f0f0f0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f2f2f2;
       color: #333;
       text-align: center;
-      padding: 20px;
+      padding: 0;
     }
 
     header {
       background-color: #4CAF50;
       color: white;
-      padding: 20px 10px;
+      padding: 30px 10px;
       font-size: 24px;
     }
 
-    main {
-      margin-top: 30px;
+    .container {
+      padding: 20px;
     }
 
     .card {
       background: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 25px;
       margin: 20px auto;
       max-width: 500px;
     }
 
+    .btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #45a049;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      color: #4CAF50;
+      font-size: 24px;
+      text-decoration: none;
+    }
+
     footer {
-      margin-top: 40px;
+      margin: 40px 0 20px;
       color: #777;
       font-size: 14px;
     }
@@ -44,26 +78,49 @@
       header {
         font-size: 20px;
       }
-      .card {
-        padding: 15px;
-      }
     }
   </style>
 </head>
 <body>
 
-  <header>📱 Welcome to My Mobile Page</header>
+  <header>📱 Raj's Mobile Website</header>
 
-  <main>
+  <div class="container">
     <div class="card">
-      <h2>Hello, Raj!</h2>
-      <p>This is a simple mobile-friendly page hosted on GitHub Pages.</p>
-      <p>You can customize this file with your own content.</p>
+      <h2>Hello, I'm Raj!</h2>
+      <p>This is a mobile-friendly page hosted on GitHub Pages.</p>
+      <a href="#contact" class="btn">Contact Me</a>
+      <a href="#download" class="btn">Download App</a>
     </div>
-  </main>
+
+    <div class="card" id="contact">
+      <h3>📬 Contact Me</h3>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" rows="4" required></textarea>
+        <button class="btn" type="submit">Send</button>
+      </form>
+    </div>
+
+    <div class="card" id="download">
+      <h3>📲 Download My App</h3>
+      <a href="#" class="btn"><i class="fab fa-android"></i> Android</a>
+      <a href="#" class="btn"><i class="fab fa-apple"></i> iOS</a>
+    </div>
+
+    <div class="card">
+      <h3>🌐 Follow Me</h3>
+      <div class="social-icons">
+        <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://twitter.com/yourusername" target="_blank"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </div>
 
   <footer>
-    &copy; 2025 Raj Kumar
+    &copy; 2025 Raj Kumar | Made with ❤️ using GitHub Pages
   </footer>
 
 </body>
